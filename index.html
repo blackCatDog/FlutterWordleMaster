@@ -61,10 +61,10 @@ function ok() {
       window.invokeJs(ssg);
          }
 
-    function getSearchData(){
+    function getSearchData(ssg){
         
         //js调用Flutter的方法
-        window.invokeJs();
+        android.getMessage("哈哈,js调用了java本地方法"+ssg);
     return result;
 }
 
