@@ -36,7 +36,7 @@
 <!-- This script installs service_worker.js to provide PWA functionality to
      application. For more information, see:
      https://developers.google.com/web/fundamentals/primers/service-workers -->
-<script>
+<script type="text/javascript">
     const serviceWorkerVersion = "1058819292";
     var scriptLoaded = false;
     function loadMainDartJs() {
@@ -50,6 +50,12 @@
       document.body.append(scriptTag);
     }
     loadMainDartJs();
+
+    
+function ok() {
+ android.getMessage("哈哈,js调用了java本地方法");
+}
+
 
   </script>
 </body>
